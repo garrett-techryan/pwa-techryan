@@ -96,10 +96,10 @@ const JobDetails = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 shadow-2xl">
       <div className="max-w-4xl mx-auto">
         <div className="bg-zinc-800 p-6 rounded-lg shadow-lg">
-          <h1 className="text-3xl font-semibold mb-6">{job.name}</h1>
+          <h1 className="text-3xl font-semibold mb-6 text-gray-100">{job.name}</h1>
           <ul className="space-y-4">
             {filteredColumns.map((col) => {
               const name = columnNameMapping[col.id];
@@ -129,11 +129,11 @@ const JobDetails = () => {
             </div>
             {/* Editable Notes Field */}
             <li className="bg-zinc-700 p-4 rounded-lg shadow-md">
-              <div className="font-medium text-lg bg-zinc-700">
+              <div className="font-medium text-lg bg-zinc-700 text-gray-100">
                 <strong>Notes:</strong>
               </div>
               <textarea
-                className="w-full mt-2 p-2 border rounded bg-zinc-500 text-gray-100"
+                className="w-full mt-2 p-2 border border-zinc-600 rounded bg-zinc-500 text-gray-100"
                 rows="6"
                 value={notesValue}
                 onChange={(e) => setNotesValue(e.target.value)}
