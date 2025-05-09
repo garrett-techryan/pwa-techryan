@@ -15,14 +15,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-xl p-3 flex justify-between items-center">
+    <nav className="bg-zinc-800 shadow-xl p-3 flex justify-between items-center">
       {/* Left-side menu button */}
-      <button className="text-gray-600 hover:text-black">
+      <button className="text-gray-100 hover:text-gray-300">
         ☰
       </button>
 
       {/* Center logo/title */}
-      <div className="text-xl font-bold">Techryan Onsite</div>
+      <div className="text-xl font-bold text-gray-100">Techryan Onsite</div>
 
       {/* Right-side auth button */}
       <div>
@@ -36,7 +36,7 @@ const Navbar = () => {
         ) : (
           <button
             onClick={handleLogin}
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            className="bg-techryan-yellow text-white px-4 py-2 rounded hover:bg-techryan-yellowhover"
           >
             Login
           </button>

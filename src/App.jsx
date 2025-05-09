@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-100 text-gray-800">
+      <div className="min-h-screen bg-zinc-700 text-gray-800">
         <Navbar /> {/* Navbar visible on both states */}
         
         <AuthenticatedTemplate>
@@ -32,11 +32,11 @@ const App = () => {
 
         <UnauthenticatedTemplate>
           <div className="flex items-center justify-center h-[calc(100vh-4rem)]">
-            <div className="p-6 bg-white shadow rounded text-center">
-              <h1 className="text-xl font-bold mb-4">Please sign in</h1>
+            <div className="p-6 bg-zinc-800 shadow-xl rounded text-center">
+              <h1 className="text-xl font-bold mb-4 text-gray-100">Please sign in</h1>
               <button
                 onClick={handleLogin}
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                className="bg-techryan-yellow text-white px-4 py-2 rounded hover:bg-techryan-yellowhover"
               >
                 Sign in with Microsoft
               </button>
