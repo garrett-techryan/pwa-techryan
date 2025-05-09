@@ -57,7 +57,7 @@ const Dashboard = () => {
       <h1 className="text-2xl font-bold mb-4 text-gray-100">All Jobs</h1>
       <ul className="space-y-2">
       {items.map((item) => (
-  <li key={item.id} className="bg-gray-800 p-3 rounded shadow-lg hover:bg-gray-850 text-gray-100">
+  <li key={item.id} className="bg-zinc-800 p-3 rounded shadow-lg hover:bg-gray-850 text-gray-100">
     <Link to={`/job/${item.id}`} className="block">
       <strong>{item.name}</strong>
       <div className="text-sm text-techryan-yellow">

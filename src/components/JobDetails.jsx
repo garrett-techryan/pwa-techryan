@@ -128,12 +128,12 @@ const JobDetails = () => {
                 </button>
             </div>
             {/* Editable Notes Field */}
-            <li className="bg-gray-100 p-4 rounded-lg shadow-md">
-              <div className="font-medium text-lg">
+            <li className="bg-zinc-700 p-4 rounded-lg shadow-md">
+              <div className="font-medium text-lg bg-zinc-700">
                 <strong>Notes:</strong>
               </div>
               <textarea
-                className="w-full mt-2 p-2 border rounded"
+                className="w-full mt-2 p-2 border rounded bg-zinc-500 text-gray-100"
                 rows="6"
                 value={notesValue}
                 onChange={(e) => setNotesValue(e.target.value)}
