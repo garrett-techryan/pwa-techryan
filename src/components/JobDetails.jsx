@@ -98,14 +98,14 @@ const JobDetails = () => {
   return (
     <div className="p-4">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="bg-zinc-800 p-6 rounded-lg shadow-lg">
           <h1 className="text-3xl font-semibold mb-6">{job.name}</h1>
           <ul className="space-y-4">
             {filteredColumns.map((col) => {
               const name = columnNameMapping[col.id];
               if (col.id === "notes") return null; // Handle separately
               return (
-                <li key={col.id} className="bg-gray-700 p-4 rounded-lg shadow-md">
+                <li key={col.id} className="bg-zinc-700 p-4 rounded-lg shadow-md">
                   <div className="font-medium text-lg text-gray-100">
                     <strong>{name}:</strong>
                   </div>
@@ -122,7 +122,7 @@ const JobDetails = () => {
                 </button>
                 <button
                     onClick={() => handleStatusChange("4")}
-                    className="px-4 py-2 bg-gray-900 text-white rounded hover:bg-red-700"
+                    className="px-4 py-2 bg-zinc-900 text-white rounded hover:bg-red-700"
                 >
                     Stop Timer
                 </button>
