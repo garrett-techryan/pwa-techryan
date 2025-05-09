@@ -98,31 +98,31 @@ const JobDetails = () => {
   return (
     <div className="p-4">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-white p-6 rounded-lg shadow-lg">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
           <h1 className="text-3xl font-semibold mb-6">{job.name}</h1>
           <ul className="space-y-4">
             {filteredColumns.map((col) => {
               const name = columnNameMapping[col.id];
               if (col.id === "notes") return null; // Handle separately
               return (
-                <li key={col.id} className="bg-gray-100 p-4 rounded-lg shadow-md">
-                  <div className="font-medium text-lg">
+                <li key={col.id} className="bg-gray-700 p-4 rounded-lg shadow-md">
+                  <div className="font-medium text-lg text-gray-100">
                     <strong>{name}:</strong>
                   </div>
-                  <p className="text-gray-700 mt-2">{col.text}</p>
+                  <p className="text-gray-200 mt-2">{col.text}</p>
                 </li>
               );
             })}
             <div className="mt-6 flex space-x-4">
                 <button
                     onClick={() => handleStatusChange("3")}
-                    className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+                    className="px-4 py-2 bg-techryan-yellow text-white rounded hover:bg-techryan-yellowhover"
                 >
                     Start Timer
                 </button>
                 <button
                     onClick={() => handleStatusChange("4")}
-                    className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                    className="px-4 py-2 bg-gray-900 text-white rounded hover:bg-red-700"
                 >
                     Stop Timer
                 </button>
@@ -139,7 +139,7 @@ const JobDetails = () => {
                 onChange={(e) => setNotesValue(e.target.value)}
               />
               <button
-                className="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                className="mt-3 px-4 py-2 bg-techryan-yellow text-white rounded hover:bg-techryan-yellowhover"
                 onClick={handleNotesSave}
                 disabled={isSaving}
               >
