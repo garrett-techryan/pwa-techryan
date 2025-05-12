@@ -87,7 +87,7 @@ useEffect(() => {
         </button>
       )}
 
-      {scanning && <div id="scanner" className="mb-4" />}
+      {scanning && <div id="scanner" className="w-full h-[300px] max-w-sm mx-auto" />}
 
       {scannedCode && (
         <div className="space-y-4">
