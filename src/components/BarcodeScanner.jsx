@@ -4,7 +4,7 @@ const BarcodeScanner = ({ onScan }) => {
   useEffect(() => {
     const scanner = new Html5QrcodeScanner("scanner", {
       fps: 10,
-      qrbox: 250,
+      qrbox: { width: Math.min(250, window.innerWidth * 0.8), height: Math.min(250, window.innerWidth * 0.8) },
     });
 
     scanner.render(
