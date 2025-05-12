@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchBoardData, writeBoardData } from "../api/mondayApi";
+import ScanProductCard from "./ScanProductCard.jsx";
 
 // Mapping column IDs to friendly names
 const columnNameMapping = {
@@ -113,10 +114,10 @@ const JobDetails = () => {
                 </li>
               );
             })}
-            <div className="mt-6 flex space-x-4">
+            <div className="p-4 bg-zinc-700 rounded shadow mb-4">
                 <button
                     onClick={() => handleStatusChange("3")}
-                    className="px-4 py-2 bg-techryan-yellow text-white rounded hover:bg-techryan-yellowhover"
+                    className="px-4 py-2 bg-techryan-yellow text-white rounded hover:bg-techryan-yellowhover mx-0.5 mr-3"
                 >
                     Start Timer
                 </button>
@@ -127,6 +128,7 @@ const JobDetails = () => {
                     Stop Timer
                 </button>
             </div>
+            <ScanProductCard parentItemId={jobId} />
             {/* Editable Notes Field */}
             <li className="bg-zinc-700 p-4 rounded-lg shadow-md">
               <div className="font-medium text-lg bg-zinc-700 text-gray-100">

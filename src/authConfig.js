@@ -1,8 +1,8 @@
 export const msalConfig = {
     auth: {
-      clientId: "127a58c5-6c66-4035-83f1-6e0f078c4576", // from Azure portal
+      clientId: "14d267d0-19e0-4103-8cfa-1a7e9f0b4cc1", // from Azure portal
       authority: "https://login.microsoftonline.com/d72ae6fa-03a7-4ccb-888c-64613b1d665b",
-      redirectUri: "http://localhost:3000",
+      redirectUri: "https://pwa.techryan.net",
     },
     cache: {
       cacheLocation: "localStorage",
